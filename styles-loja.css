@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+/* NAV-BAR CSS */
+#logo {
+    height: 5rem;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+#nav-bar-loja {
+    background-color: #181515;
+    display: flex;
+    height: 5rem;
+    width: 100% !important;
+}
+#linkstop-loja {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 650;
+    font-size: 1rem;
+    display: flex;
+    margin: auto;
+    gap: 3rem;
+}
+#linkstop-loja a {
+    color: rgb(236, 225, 225);
+    background-color: transparent;
+    text-decoration: none;
+}
+#linkstop-loja a:hover{
+    color: burlywood !important;
+    transition: 0.5s;
+}

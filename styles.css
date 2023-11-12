@@ -1,0 +1,666 @@
+/* AINDA IREI ACRESCENTAR OS COMENTÁRIOS PARA ORGANIZAR MELHOR */
+body {
+    margin: 0;
+    /* variáveis default */
+    --bg-white: #ffffff;
+    --bg-dark: #252525;
+    background-color: var(--bg-white);
+    transition: 2s;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1, h2, p {
+    transition: color 1s;
+}
+.dark {
+    --bg-white: #252525;
+    --bg-dark: #ffffff;
+}
+/* DESIGN RESPONSIVO */
+@media screen and (min-device-width: 1720px) and (max-device-width: 1920px) {
+    .texthome {
+        width: 65% !important;
+    }
+    .first-section {
+        margin-left: 7% !important;
+    }
+    .imagem-elenco {
+        height: 30rem !important;
+        margin-left: 15% !important;
+    }
+    .newsletter-text {
+        margin-left: 59% !important;
+    }
+    .dark-mode-button {
+        margin-left: 15% !important;
+        margin-top: 1.6rem !important;
+    }
+}
+@media screen and (min-device-width: 1550px) and (max-device-width: 1720px) {
+    .texthome {
+        width: 70% !important;
+    }
+    .first-section {
+        margin-left: 3% !important;
+    }
+    .imagem-elenco {
+        margin-left: 15% !important;
+    }
+    .newsletter-text {
+        margin-left: 59% !important;
+    }
+}
+@media screen and (min-device-width: 1400px) and (max-device-width: 1550px) {
+    .texthome {
+        width: 75% !important;
+    }
+    .first-section {
+        margin-left: 2% !important;
+    }
+    .imagem-elenco {
+        margin-left: 10% !important;
+    }
+    .newsletter-text {
+        margin-left: 60% !important;
+    }
+}
+@media screen and (min-device-width: 1250px) and (max-device-width: 1400px) {
+    .texthome {
+        width: 85% !important;
+    }
+    .imagem-caderno {
+        height: 23rem !important;
+        top: 20rem !important;
+    }
+    .first-section {
+        margin-left: 1% !important;
+    }
+}
+@media screen and (min-device-width: 1100px) and (max-device-width: 1250px) {
+    .imagem-caderno {
+        height: 20rem !important;
+        margin-left: 55% !important;
+        top: 21rem !important;
+    }
+    .texthome {
+        width: 90% !important;
+    }
+    .imagem-elenco {
+        height: 26rem !important;
+        top: 54rem !important;
+        margin-left: 5% !important;
+    }
+    #quem-somos-nos {
+        margin-left: 40% !important;
+        top: 42rem !important;
+    }
+    .div-sobre-nos {
+        width: 40% !important;
+    }
+    .newsletter-text {
+        margin-left: 62% !important;
+    }
+}
+@media screen and (min-device-width: 950px) and (max-device-width: 1100px) {
+    .imagem-caderno {
+        height: 24rem !important;
+        top: 25rem !important;
+        margin-left: 38% !important;
+    }
+    .dark-mode-button {
+        margin-top: 1.5rem !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .texthome {
+        width: 90% !important;
+        font-size: 1.5rem !important;
+    }
+    .sec-section {
+        height: 20rem;
+    }
+    .imagem-elenco {
+        top: 73rem !important;
+        margin-left: 25% !important;
+    }
+    .div-sobre-nos {
+        margin-left: 15% !important;
+        width: 75% !important;
+        top: 58rem !important;
+    }
+    #quem-somos-nos {
+        margin-left: 30% !important;
+        top: 48rem !important;
+    }
+    .email-box {
+        margin-left: 45% !important;
+        top: 13rem !important;
+    }
+    .newsletter-text {
+        display: none;
+    }
+    .text-final {
+        top: 5rem !important;
+        margin-left: 50% !important;
+        width: 23rem !important;
+    }
+    .section-four {
+        margin-right: 10% !important;
+    }
+}
+@media screen and (min-device-width: 850px) and (max-device-width: 950px) {
+    .imagem-caderno {
+        height: 22rem !important;
+        margin-left: 0% !important;
+        right: 3% !important;
+        top: 25rem !important;
+    }
+    .texthome {
+        width: 95% !important;
+        font-size: 1.5rem !important;
+        margin-left: 5% !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .sec-section {
+        height: 20rem;
+    }
+    .imagem-elenco {
+        top: 78rem !important;
+        margin-left: 25% !important;
+    }
+    .div-sobre-nos {
+        margin-left: 15% !important;
+        width: 75% !important;
+        top: 60rem !important;
+    }
+    #quem-somos-nos {
+        margin-left: 25% !important;
+        top: 48rem !important;
+    }
+    .email-box {
+        margin-left: 23% !important;
+        top: 8.5rem !important;
+    }
+    .newsletter-text {
+        display: none;
+    }
+    .text-final {
+        top: 2rem !important;
+        margin-left: 30% !important;
+        width: 23rem !important;
+    }
+    .dark-mode-button {
+        margin-left: 8% !important;
+        margin-top: 1.5rem !important;
+    }
+    .section-four {
+        margin-left: -10% !important;
+    }
+}
+@media screen and (min-device-width: 750px) and (max-device-width: 850px) {
+    .imagem-caderno, #quem-somos-nos {
+        display: none;
+    }
+    .texthome {
+        width: 90% !important;
+        font-size: 1.3rem !important;
+        margin-right: 10% !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .sec-section {
+        height: 0rem;
+    }
+    .imagem-elenco {
+        top: 30rem !important;
+        margin-left: 0% !important;
+        right: 5% !important;
+    }
+    .div-sobre-nos {
+        margin-left: 10% !important;
+        width: 75% !important;
+        top: 59rem !important;
+    }
+    .email-box {
+        margin-left: 21% !important;
+        top: 8.5rem !important;
+    }
+    .newsletter-text {
+        display: none;
+    }
+    .text-final {
+        top: 2rem !important;
+        margin-left: 22% !important;
+        width: 30rem !important;
+    }
+    .dark-mode-button {
+        margin-left: 10% !important;
+        margin-top: 1.5rem !important;
+    }
+    .section-four {
+        margin-left: -15% !important;
+    }
+}
+@media screen and (min-device-width: 650px) and (max-device-width: 750px) {
+    .imagem-caderno, #quem-somos-nos {
+        display: none;
+    }
+    .texthome {
+        width: 90% !important;
+        font-size: 1.3rem !important;
+        margin-right: 10% !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .sec-section {
+        height: 0rem;
+    }
+    .imagem-elenco {
+        top: 30rem !important;
+        margin-left: 0% !important;
+        right: 5% !important;
+    }
+    .div-sobre-nos {
+        margin-left: 10% !important;
+        width: 75% !important;
+        top: 59rem !important;
+    }
+    .email-box {
+        margin-left: 17% !important;
+        top: 9rem !important;
+    }
+    .newsletter-text {
+        display: none;
+    }
+    .text-final {
+        top: 2rem !important;
+        margin-left: 18% !important;
+        width: 30rem !important;
+    }
+    .dark-mode-button {
+        margin-left: 10% !important;
+        margin-top: 1.5rem !important;
+    }
+    .section-four {
+        margin-left: -23% !important;
+    }
+}
+@media screen and (min-device-width:550px) and (max-device-width:650px) {
+    .imagem-caderno, #quem-somos-nos {
+        display: none;
+    }
+    .texthome {
+        width: 90% !important;
+        font-size: 1.3rem !important;
+        margin-right: 10% !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .sec-section {
+        height: 0rem;
+    }
+    .imagem-elenco {
+        top: 28rem !important;
+        margin-left: 0% !important;
+        right: 10% !important;
+        height: 25rem !important;
+    }
+    .div-sobre-nos {
+        margin-left: 10% !important;
+        width: 75% !important;
+        top: 55rem !important;
+    }
+    .email-box {
+        top: 7rem !important;
+        margin: auto !important;
+        width: 70% !important;
+        text-align: center;
+    }
+    .newsletter-text, #logo, .img-4section, .text-final{
+        display: none;
+    }
+    .dark-mode-button {
+        margin-left: 10% !important;
+        margin-top: 1.5rem !important;
+    }
+    .section-four {
+        height: 10rem !important;
+    }
+    .first-part-four-section {
+        margin-top: 18rem !important;
+        margin-left: 4rem !important;
+    }
+    .third-section h1 {
+      font-size: 2.5rem !important;
+      margin-top: 2rem !important;
+    }
+    .third-section a {
+        font-size: 1.2rem !important;
+    }
+    .third-section img {
+        height: 20rem !important;
+        margin-top: 3.5rem !important;
+    }
+}
+@media screen and (min-device-width: 450px) and (max-device-width:550px) {
+    #top {
+        height: 5rem !important;
+    }
+    .texthome {
+        width: 90% !important;
+        font-size: 1.2rem !important;
+        margin-right: 10% !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .sec-section {
+        height: 0rem;
+    }
+    .imagem-elenco {
+        top: 28rem !important;
+        margin: auto !important;
+        height: 21em !important;
+    }
+    .div-sobre-nos {
+        margin-left: 10% !important;
+        width: 85% !important;
+        top: 52rem !important;
+    }
+    #linkstop {
+        margin: auto !important;
+        gap: 2rem !important;
+    }
+    .email-box {
+        top: 7rem !important;
+        margin: auto !important;
+        width: 70% !important;
+        text-align: center;
+    }
+    .newsletter-text, #logo, .img-4section, .text-final, .imagem-caderno, #quem-somos-nos{
+        display: none;
+    }
+    .dark-mode-button {
+        margin: auto !important;
+    }
+    .section-four {
+        height: 10rem !important;
+    }
+    .first-part-four-section {
+        margin-top: 18rem !important;
+        margin-left: 4rem !important;
+    }
+    .third-section h1 {
+      font-size: 2.5rem !important;
+      margin-top: 2rem !important;
+    }
+    .third-section a {
+        font-size: 1.2rem !important;
+    }
+    .third-section img {
+        height: 18rem !important;
+        margin-top: 3.5rem !important;
+    }
+}
+/* MOBILE SCREEN */
+@media screen and (min-device-width: 400px) and (max-device-width:450px) {
+    #top {
+        height: 5rem !important;
+    }
+    .texthome {
+        width: 90% !important;
+        font-size: 1.1rem !important;
+        text-align: center;
+        margin-top: 2rem !important;
+    }
+    .qualidade {
+        font-size: 0.9rem !important;
+        margin-top: auto !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .sec-section {
+        height: 0rem;
+    }
+    .imagem-elenco {
+        top: 28rem !important;
+        margin: auto !important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+    .div-sobre-nos {
+        margin-left: 10% !important;
+        width: auto !important;
+        top: 52rem !important;
+    }
+    #linkstop {
+        margin: auto !important;
+        gap: 1.3rem !important;
+        font-size: 1rem !important;
+    }
+    .email-box {
+        top: 6.5rem !important;
+        margin: auto !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    .newsletter-text, #logo, .img-4section, .text-final, .imagem-caderno, #quem-somos-nos{
+        display: none;
+    }
+    .dark-mode-button {
+        margin: auto !important;
+    }
+    .dark-mode-button img {
+        height: 1.2rem !important;
+    }
+    .section-four {
+        height: 10rem !important;
+    }
+    .first-part-four-section {
+        margin-top: 15rem !important;
+        margin-left: 1.5rem !important;
+    }
+    .third-section h1 {
+      font-size: 2.5rem !important;
+      margin-top: 6rem !important;
+    }
+    .third-section a {
+        font-size: 1.2rem !important;
+    }
+    .third-section img {
+        height: auto !important;
+        max-width: 100% !important;
+        margin-top: 1.5rem !important;
+    }
+    .third-section-background {
+        height: 38rem !important;
+    }
+}
+/* MOBILE SCREEN */
+@media screen and (min-device-width: 300px) and (max-device-width: 400px) {
+    #top {
+        height: 5rem !important;
+    }
+    .texthome {
+        width: 90% !important;
+        font-size: 0.91rem !important;
+        text-align: center;
+        margin-top: 4rem !important;
+    }
+    .qualidade {
+        font-size: 0.8rem !important;
+        top: 19.5rem !important;
+    }
+    .first-section {
+        text-align: left;
+    }
+    .sec-section {
+        height: 0rem;
+        max-height: 0rem !important;
+    }
+    .imagem-elenco {
+        top: 30rem !important;
+        margin: auto !important;
+        height: auto !important;
+        max-width: 100% !important;
+    }
+    .div-sobre-nos {
+        margin-left: 5% !important;
+        width: auto !important;
+        top: 50rem !important;
+    }
+    #text-three {
+        font-size: 1.2rem !important;
+    }
+    #linkstop {
+        margin: auto !important;
+        gap: 1rem !important;
+        font-size: 0.9rem !important;
+    }
+    /*NEWSLETTER*/
+    .email-box {
+        top: 8rem !important;
+        margin: auto !important;
+        width: 100% !important;
+        text-align: center;
+    }
+    .email-box i {
+        line-height: 1.5rem !important;
+        padding: 0.8rem !important;
+    }
+    .email-box input {
+        height: 3rem !important;
+        width: 50% !important;
+        font-size: 1rem !important;
+    }
+    .email-box button {
+        height: 3rem !important;
+    }
+    .newsletter-text, #logo, .img-4section, .text-final, .imagem-caderno, #quem-somos-nos{
+        display: none;
+    }
+    .dark-mode-button {
+        margin: auto !important;
+    }
+    .dark-mode-button img {
+        height: 1rem !important;
+    }
+    .section-four {
+        height: 10rem !important;
+    }
+    .section-four h1 {
+        font-size: 2rem !important;
+    }
+    .first-part-four-section {
+        margin-top: 15rem !important;
+        margin-left: 0.5rem !important;
+    }
+    .third-section h1 {
+      font-size: 2.5rem !important;
+      margin-top: 9rem !important;
+    }
+    .third-section a {
+        font-size: 1.2rem !important;
+    }
+    .third-section img {
+        height: auto !important;
+        max-width: 100% !important;
+        margin-top: 1.5rem !important;
+    }
+    .third-section-background {
+        height: 35rem !important;
+    }
+}
+#logo {
+    height: 5rem;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+#top {
+    background-color: #181515;
+    display: flex;
+    height: 5rem;
+    width: 100% !important;
+}
+
+#linkstop {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 650;
+    font-size: 1rem;
+    display: flex;
+    margin: auto;
+    gap: 3rem;
+}
+
+a {
+    color: rgb(236, 225, 225);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: burlywood;
+    transition: 0.5s;
+}
+.texthome {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.7rem;
+    margin: 8%;
+    margin-top: 3.1rem;
+    display: flex;
+    width: 80%;
+    
+}
+
+mark {
+    background-color: rgb(212, 212, 212);
+}
+#cupom a {
+    color: rgb(255, 255, 255);
+}
+#clique-aqui {
+    background-color: #04125e;
+    transition: 0.5s ease;
+}
+#clique-aqui:hover {
+    background-color: rgb(0, 8, 46) !important;
+    transition: 1s ease;
+}
+.in-email, .b-email {
+    border: none;
+    outline: none;
+}
+.in-email {
+    width: 15.6rem;
+    padding: 0 1rem;
+    height: 3.35rem;
+    cursor: pointer;
+}
+
+.b-email {
+    padding: 0 1rem;
+    height: 3.36rem;
+    cursor: pointer;
+}
+.img-4section {
+    height: 14.4rem;
+    transition: transform 0.5s ease;
+}
+.img-4section:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+#div-final:hover .text-final{
+    color:  rgb(212, 212, 212) !important;
+    transition: 2.0s;
+}
