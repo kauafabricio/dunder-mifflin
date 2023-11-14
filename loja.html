@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dunder Mifflin Store</title>
     <link rel="stylesheet" href="styles-loja.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="./script-loja.js"></script>
     <!-- NAV-BAR -->
     <div id="nav-bar-loja">
         <img id="logo" title="Logo da Dunder Mifflin Paper Company Inc." src="images/logo.png">
@@ -22,6 +24,18 @@
     <a href="contato.html">Contato</a>
         </div>
         <button style="background-color: #181515; cursor: pointer; margin: auto; height: 2.0rem; padding: 0 0.4rem;" id="toggle" type="button"><img id="img-button" style="height: 1.5rem; margin: auto;" src="images/dark-theme-white.png" alt=""></button>
+   </div>
+   <div id="container-slideshow">
+    <button class="arrow-left control" type="button" aria-label="previous image">←</button>
+    <button class="arrow-right control" type="button" aria-label="next image">→</button>
+       <div id="slideshow">
+             <div id="gallery">
+                   <img class="first-item item" src="images/slideshow-1-desktop.jpeg" alt="">
+                   <img class="item" src="./images/slideshow-2-desktop.jpeg" alt="">
+                   <img class="item" src="images/01.jpeg" alt="">
+                   <img src="images/slideshow-3-desktop.jpeg" alt="" class="item">
+             </div>
+       </div>
    </div>
 </body>
 </html>
