@@ -1,7 +1,24 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(fonts/GothamBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url(fonts/GothamMedium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url(fonts/GothamBook.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Gothvetica';
+    src: url(fonts/Gothvetica\ Caps\ -\ www.themarkstudio.co.za.ttf) format('truetype');
 }
 /* NAV-BAR CSS */
 #logo {
@@ -16,8 +33,8 @@ body {
     width: 100% !important;
 }
 #linkstop-loja {
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 650;
+    font-family: 'Gotham-Book', sans-serif;
+    text-transform: uppercase;
     font-size: 1rem;
     display: flex;
     margin: auto;
@@ -37,6 +54,10 @@ body {
     height: 22rem;
     flex-shrink: 0;
     transition: all 0.5 ease-in-out;
+    opacity: 0.8;
+}
+.first-item {
+    opacity: 1;
 }
 #container-slideshow {
     position: relative;
@@ -85,4 +106,119 @@ body {
 .arrow-left:hover, .arrow-right:hover {
     opacity: 0.5;
     transition: all 0.5s ease-in-out;
+}
+
+.text1 {
+    text-align: center;
+    font-family: 'Gotham-Book', sans-serif;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    color: #181515;
+}
+
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 7rem;
+}
+.produto img{
+    height: 18rem;
+    gap: 4rem !important;
+    position: relative;
+    box-shadow: 5px 5px 300px 0 #d3d3d3;
+}
+.produto {
+    max-width: 25rem;
+    height: 25rem;
+    text-align: center;
+    margin: auto;
+}
+.produto h3,p {
+    font-family: 'Gotham-Book', sans-serif;
+    color: #000000;
+    margin: 0.8rem;
+}
+.comprar {
+    font-family: 'Gotham-Book', sans-serif;
+    padding: 0.5rem !important;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 5%;
+}
+.comprar:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.sorteio-conteiner {
+    background-color: #181515;
+    max-width: auto;
+    height: 30rem;
+    display: flex;
+}
+.sorteio-content img{
+    height: 12rem;
+    opacity: 85%;
+}
+.sorteio-content h1 {
+    color: white;
+    
+}
+.sorteio-texto2 {
+    color: white;
+}
+.sorteio-button {
+    font-family: 'Gotham-Book', sans-serif;
+    padding: 1.2rem 1.2rem;
+    background-color: #04125e;
+    border: none;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5%;
+    color: white;
+}
+.sorteio-button:hover{
+    background-color: rgb(48, 48, 48);
+    transition: 0.3s ease-in-out;
+}
+.sorteio-content {
+    margin: auto;
+    max-width: 25rem;
+    text-align: center;
+    font-family: 'Gotham-Book', sans-serif;
+}
+
+#modal {
+    text-align: center;
+    font-family: 'Gotham-Book', sans-serif;
+    width: 50rem;
+    box-shadow: 0 0 0.5rem 0.1rem #181515;
+}
+#modal button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Gotham-Light', sans-serif;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+#modal button:hover {
+    background-color: #181515;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+#modal input {
+    height: 1.5rem;
+    margin-top: 1rem;
+}
+mark {
+    background-color:  #d3d3d3;
+}
+#closeButton {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
 }

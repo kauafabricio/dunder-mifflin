@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dunder Mifflin Store</title>
     <link rel="stylesheet" href="styles-loja.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <script src="./script-loja.js"></script>
@@ -25,17 +21,72 @@
         </div>
         <button style="background-color: #181515; cursor: pointer; margin: auto; height: 2.0rem; padding: 0 0.4rem;" id="toggle" type="button"><img id="img-button" style="height: 1.5rem; margin: auto;" src="images/dark-theme-white.png" alt=""></button>
    </div>
+
+   <!-- SLIDESHOW -->
    <div id="container-slideshow">
     <button class="arrow-left control" type="button" aria-label="previous image">←</button>
     <button class="arrow-right control" type="button" aria-label="next image">→</button>
        <div id="slideshow">
              <div id="gallery">
-                   <img class="first-item item" src="images/slideshow-1-desktop.jpeg" alt="">
-                   <img class="item" src="./images/slideshow-2-desktop.jpeg" alt="">
-                   <img class="item" src="images/01.jpeg" alt="">
+                <img class="first-item item" src="./images/slideshow2-desktop.jpeg" alt="">
+                   <img class="item" src="images/slideshow1-desktop.jpeg" alt="">
+                   <a href="#sorteio"><img src="images/slideshow4-desktop.jpeg" alt="" class="item"></a>
+                   <img src="images/slideshow5-desktop.jpeg" alt="" class="item">
                    <img src="images/slideshow-3-desktop.jpeg" alt="" class="item">
              </div>
        </div>
    </div>
+   <!-- PRODUTOS -->
+   <h3 class="text1">dê vida às suas ideias com nossa variedade de papéis exclusivos</h3>
+<div class="container-produtos">
+   <div class="produto"><img src="images/produto1.jpeg" alt="">
+   <h3>caderno sem pauta 40flhs</h3><p>por R$19,90</p><br>
+   <a href="contato.html" class="comprar">COMPRAR</a>
+</div>
+   <div class="produto"><img src="images/produto2.jpeg" alt="">
+    <h3>caderno sem pauta 80flhs</h3><p>por R$29,90</p><br>
+    <a href="contato.html" class="comprar">COMPRAR</a></div>
+   <div class="produto"><img src="images/produto3.jpeg" alt="">
+    <h3>caderno minimalista branco<br>60flhs</h3><p>por R$34,90</p><br>
+    <a href="contato.html" class="comprar">COMPRAR</a></div>
+   <div class="produto"><img src="images/produto4.jpeg" alt="">
+    <h3>kit fichas pautadas c/20</h3><p>por R$14,90</p><br>
+    <a href="contato.html" class="comprar">COMPRAR</a></div>
+   <div class="produto"><img src="images/produto5.jpeg" alt="">
+    <h3>prancheta dunder mifflin</h3><p>por R$14,90</p><br>
+    <a href="contato.html" class="comprar">COMPRAR</a></div>
+   <div class="produto"><img src="images/produto6.jpeg" alt="">
+    <h3>mini caderno de folhas<br> amareladas 80flhs</h3><p>por R$24,90</p><br>
+    <a href="contato.html" class="comprar">COMPRAR</a></div>
+    <div class="produto"><img src="images/produto7.jpeg" alt="">
+        <h3>calculadora dunder mifflin</h3><p>por R$9,90</p><br>
+        <a href="contato.html" class="comprar">COMPRAR</a></div>
+    <div class="produto"><img src="images/produto8.jpeg" alt="">
+    <h3>moleskine laranja 60flhs</h3><p>por R$34,90</p><br>
+    <a href="contato.html" class="comprar">COMPRAR</a></div>
+</div>
+<!--SORTEIO-->
+<div id="sorteio" class="sorteio-conteiner">
+    <div class="sorteio-content">
+    <h1 class="sorteio-texto">Participe do nosso sorteio</h1>
+    <p class="sorteio-texto2">Concorra ao nosso sorteio de <mark>5 cadernos da Dunder Mifflin.</mark></p>
+    <img src="images/img-sorteio.jpeg" alt=""><br>
+    <button class="sorteio-button">CONCORRER</button>
+    <dialog id="modal">
+    <button id="closeButton">X</button>
+    <h3>Digite suas informações</h3>
+    <p>Iremos contatar você caso seja sorteado(a).</p>
+    <form action="">
+        <label for="name"><b>Nome:</b></label>
+        <input type="text" placeholder="Digite seu nome" name="name" size="30"><br>
+        <label for="email"><b>E-mail:</b></label>
+        <input placeholder="Digite seu e-mail" type="email" name="email" size="30"><br><br>
+        <button type="submit">ENVIAR</button>
+        
+    </form>
+</dialog>
+</div>
+</div>
+
 </body>
 </html>

@@ -4,15 +4,10 @@ const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
-var clickedControl;
 controls.forEach((control) => {
     control.addEventListener("click", (e) => {
         const isLeft = e.target.classList.contains("arrow-left");
-        trocaImagem(isLeft);
-        });
-    });
-    function trocaImagem (isLeft) {
-    if (isLeft) {
+        if (isLeft) {
             currentItem -=1;
         } else {
             currentItem +=1;
@@ -28,10 +23,20 @@ controls.forEach((control) => {
             inline: "center", behavior: "smooth"
         });
         items[currentItem].classList.add("first-item");
+        });
+    });
+
+// MODAL
+
+const modal = document.getElementById("modal");
+const buttonModal = document.querySelector(".sorteio-button");
+const closeButton= document.getElementById("closeButton");
+
+buttonModal.onclick = function () {
+    modal.showModal();
 }
-    function autoTrocaImagem() {
-    trocaImagem(false);
-    setTimeout(autoTrocaImagem, 7000);
+closeButton.onclick = function () {
+    modal.close();
 }
-autoTrocaImagem();
 });
+
