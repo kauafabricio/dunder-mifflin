@@ -5,7 +5,7 @@ body {
     --bg-white: #ffffff;
     --bg-dark: #252525;
     background-color: var(--bg-white);
-    transition: 2s;
+    transition: 1s;
 }
 @font-face {
     font-family: 'Gotham-Bold';
@@ -36,7 +36,7 @@ h1, h2, p {
 /* DESIGN RESPONSIVO */
 @media screen and (min-device-width: 1720px) and (max-device-width: 1920px) {
     .texthome {
-        width: 65% !important;
+        width: 80rem !important;
     }
     .first-section {
         margin-left: 7% !important;
@@ -46,16 +46,15 @@ h1, h2, p {
         margin-left: 15% !important;
     }
     .newsletter-text {
-        margin-left: 59% !important;
+        margin-left: 58% !important;
     }
-    .dark-mode-button {
-        margin-left: 15% !important;
-        margin-top: 1.6rem !important;
+    .email-box {
+        margin-left: 56% !important
     }
 }
 @media screen and (min-device-width: 1550px) and (max-device-width: 1720px) {
     .texthome {
-        width: 70% !important;
+        width: 80rem !important;
     }
     .first-section {
         margin-left: 3% !important;
@@ -64,12 +63,15 @@ h1, h2, p {
         margin-left: 15% !important;
     }
     .newsletter-text {
-        margin-left: 59% !important;
+        margin-left: 60% !important;
+    }
+    .email-box {
+        margin-left: 57% !important;
     }
 }
 @media screen and (min-device-width: 1400px) and (max-device-width: 1550px) {
     .texthome {
-        width: 75% !important;
+        width: 80rem !important;
     }
     .first-section {
         margin-left: 2% !important;
@@ -78,12 +80,15 @@ h1, h2, p {
         margin-left: 10% !important;
     }
     .newsletter-text {
-        margin-left: 60% !important;
+        margin-left: 59% !important;
+    }
+    .email-box {
+        margin-left: 56% !important;
     }
 }
 @media screen and (min-device-width: 1250px) and (max-device-width: 1400px) {
     .texthome {
-        width: 85% !important;
+        width: 70rem !important;
     }
     .imagem-caderno {
         height: 23rem !important;
@@ -124,9 +129,6 @@ h1, h2, p {
         top: 25rem !important;
         margin-left: 38% !important;
     }
-    .dark-mode-button {
-        margin-top: 1.5rem !important;
-    }
     .first-section {
         text-align: left;
     }
@@ -151,8 +153,8 @@ h1, h2, p {
         top: 48rem !important;
     }
     .email-box {
-        margin-left: 45% !important;
-        top: 13rem !important;
+        margin-left: 50% !important;
+        top: 11rem !important;
     }
     .newsletter-text {
         display: none;
@@ -198,7 +200,7 @@ h1, h2, p {
         top: 48rem !important;
     }
     .email-box {
-        margin-left: 23% !important;
+        margin-left: 30% !important;
         top: 8.5rem !important;
     }
     .newsletter-text {
@@ -208,10 +210,6 @@ h1, h2, p {
         top: 2rem !important;
         margin-left: 30% !important;
         width: 23rem !important;
-    }
-    .dark-mode-button {
-        margin-left: 8% !important;
-        margin-top: 1.5rem !important;
     }
     .section-four {
         margin-left: -10% !important;
@@ -243,7 +241,7 @@ h1, h2, p {
         top: 59rem !important;
     }
     .email-box {
-        margin-left: 21% !important;
+        margin-left: 28% !important;
         top: 8.5rem !important;
     }
     .newsletter-text {
@@ -253,10 +251,6 @@ h1, h2, p {
         top: 2rem !important;
         margin-left: 22% !important;
         width: 30rem !important;
-    }
-    .dark-mode-button {
-        margin-left: 10% !important;
-        margin-top: 1.5rem !important;
     }
     .section-four {
         margin-left: -15% !important;
@@ -288,7 +282,7 @@ h1, h2, p {
         top: 59rem !important;
     }
     .email-box {
-        margin-left: 17% !important;
+        margin-left: 23% !important;
         top: 9rem !important;
     }
     .newsletter-text {
@@ -299,12 +293,12 @@ h1, h2, p {
         margin-left: 18% !important;
         width: 30rem !important;
     }
-    .dark-mode-button {
-        margin-left: 10% !important;
-        margin-top: 1.5rem !important;
-    }
     .section-four {
         margin-left: -23% !important;
+    }
+    #linkstop {
+        gap: 3rem !important;
+        font-size: 1rem !important;
     }
 }
 @media screen and (min-device-width:550px) and (max-device-width:650px) {
@@ -336,15 +330,11 @@ h1, h2, p {
     .email-box {
         top: 7rem !important;
         margin: auto !important;
-        width: 70% !important;
+        width: 71% !important;
         text-align: center;
     }
     .newsletter-text, #logo, .img-4section, .text-final{
         display: none;
-    }
-    .dark-mode-button {
-        margin-left: 10% !important;
-        margin-top: 1.5rem !important;
     }
     .section-four {
         height: 10rem !important;
@@ -363,6 +353,16 @@ h1, h2, p {
     .third-section img {
         height: 20rem !important;
         margin-top: 3.5rem !important;
+    }
+    #linkstop {
+        gap: 3rem !important;
+        font-size: 1rem !important;
+    }
+}
+@media screen and (min-device-width: 400px) and (max-device-width: 500px) {
+    #linkstop {
+        gap: 1.5rem !important;
+        font-size: 0.9rem !important;
     }
 }
 @media screen and (min-device-width: 450px) and (max-device-width:550px) {
@@ -390,21 +390,26 @@ h1, h2, p {
         width: 85% !important;
         top: 52rem !important;
     }
-    #linkstop {
-        margin: auto !important;
-        gap: 2rem !important;
-    }
     .email-box {
         top: 7rem !important;
-        margin: auto !important;
-        width: 70% !important;
+        margin: auto 5rem !important;
+        width: auto !important;
         text-align: center;
+    }
+     .email-box i {
+        line-height: 1.5rem !important;
+        padding: 0.8rem !important;
+    }
+    .email-box input {
+        height: 3rem !important;
+        width: 50% !important;
+        font-size: 1rem !important;
+    }
+    .email-box button {
+        height: 3rem !important;
     }
     .newsletter-text, #logo, .img-4section, .text-final, .imagem-caderno, #quem-somos-nos{
         display: none;
-    }
-    .dark-mode-button {
-        margin: auto !important;
     }
     .section-four {
         height: 10rem !important;
@@ -430,10 +435,17 @@ h1, h2, p {
     #top {
         height: 5rem !important;
     }
+    #toggle img {
+        height: 1.2rem !important;
+    }
+    #toggle {
+        padding: 0 0rem !important;
+        height: 1.5rem !important;
+    }
     .texthome {
         width: 90% !important;
         font-size: 1.1rem !important;
-        text-align: center;
+        text-align: left;
         margin-top: 2rem !important;
     }
     .qualidade {
@@ -457,25 +469,26 @@ h1, h2, p {
         width: auto !important;
         top: 52rem !important;
     }
-    #linkstop {
-        margin: auto !important;
-        gap: 1.3rem !important;
+    .email-box {
+        top: 7rem !important;
+        margin: auto 4rem !important;
+        width: auto !important;
+        text-align: center;
+    }
+     .email-box i {
+        line-height: 1.5rem !important;
+        padding: 0.8rem !important;
+    }
+    .email-box input {
+        height: 3rem !important;
+        width: 50% !important;
         font-size: 1rem !important;
     }
-    .email-box {
-        top: 6.5rem !important;
-        margin: auto !important;
-        width: 100% !important;
-        text-align: center;
+    .email-box button {
+        height: 3rem !important;
     }
     .newsletter-text, #logo, .img-4section, .text-final, .imagem-caderno, #quem-somos-nos{
         display: none;
-    }
-    .dark-mode-button {
-        margin: auto !important;
-    }
-    .dark-mode-button img {
-        height: 1.2rem !important;
     }
     .section-four {
         height: 10rem !important;
@@ -506,24 +519,20 @@ h1, h2, p {
         height: 5rem !important;
     }
     .texthome {
-        width: 90% !important;
+        width: auto !important;
         font-size: 0.91rem !important;
-        text-align: center;
-        margin-top: 4rem !important;
+        text-align: left;
+        margin-top: 1rem !important;
     }
     .qualidade {
         font-size: 0.8rem !important;
-        top: 19.5rem !important;
+        top: 16rem !important;
     }
     .first-section {
         text-align: left;
     }
-    .sec-section {
-        height: 0rem;
-        max-height: 0rem !important;
-    }
     .imagem-elenco {
-        top: 30rem !important;
+        top: 56rem !important;
         margin: auto !important;
         height: auto !important;
         max-width: 100% !important;
@@ -531,20 +540,25 @@ h1, h2, p {
     .div-sobre-nos {
         margin-left: 5% !important;
         width: auto !important;
-        top: 50rem !important;
+        top: 40rem !important;
+    }
+    .imagem-caderno {
+        height: auto !important;
+        max-width: 100% !important;
+        margin: 3rem auto !important;
     }
     #text-three {
         font-size: 1.2rem !important;
     }
     #linkstop {
         margin: auto !important;
-        gap: 1rem !important;
+        gap: 0.7rem !important;
         font-size: 0.9rem !important;
     }
     /*NEWSLETTER*/
     .email-box {
         top: 8rem !important;
-        margin: auto !important;
+        margin: auto 1.5rem !important;
         width: 100% !important;
         text-align: center;
     }
@@ -560,14 +574,15 @@ h1, h2, p {
     .email-box button {
         height: 3rem !important;
     }
-    .newsletter-text, #logo, .img-4section, .text-final, .imagem-caderno, #quem-somos-nos{
+    .newsletter-text, #logo, .img-4section, .text-final, #quem-somos-nos{
         display: none;
     }
-    .dark-mode-button {
-        margin: auto !important;
+    #toggle img {
+        height: 1.2rem !important;
     }
-    .dark-mode-button img {
-        height: 1rem !important;
+    #toggle {
+        padding: 0 0rem !important;
+        height: 1.5rem !important;
     }
     .section-four {
         height: 10rem !important;
@@ -594,6 +609,10 @@ h1, h2, p {
     .third-section-background {
         height: 35rem !important;
     }
+}
+/* NAV-BAR */
+.dark-mode-button {
+    margin: auto !important;
 }
 #logo {
     height: 5rem;
@@ -626,6 +645,7 @@ a:hover {
     color: burlywood;
     transition: 0.5s;
 }
+/* FIRST SECTION */
 .texthome {
     font-family: 'Gotham-Bold', sans-serif;
     font-size: 1.7rem;
@@ -635,7 +655,7 @@ a:hover {
     width: 80%;
     
 }
-
+/* ELEMENTOS EM ORDEM ALEATÓRIA DA PÁGINA INICIAL */
 mark {
     background-color: #d4d4d4;
 }

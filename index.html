@@ -76,17 +76,17 @@
     <!-- QUINTA SECTION: Última sessão-->
     <section class="fifth-section" id="div-final" style="background-color: rgb(17, 17, 17); overflow: hidden; top: 25rem; height: 22.5rem; position: relative;">
 
-
+        
         <h1 class="newsletter-text" style="position: absolute; margin-left: 61%;font-family: 'Gotham-Bold', sans-serif; font-weight: 700; font-size: 3.4rem; "> <mark>Newsletter</mark></h1>
         
         <h3 class="text-final" style="text-align: center; color: rgb(160, 160, 160); position: absolute; margin-left: 53%; font-family: 'Gotham-Book', sans-serif; margin-right: 10%; top: 14.3rem; font-size: 1.2rem; width: 30rem; " >Assine nosso Newsletter para não perder promoções, cupons e eventos da Dunder Mifflin. Fique por dentro!</h3>
         
         <!--DIV DA PARTE DA CAIXA DE E-MAIL DO NEWSLETTER-->
-        <div style="display: flex; position: relative; margin-left: 53%; top: 10rem;" class="email-box">
-        <form action="">
+        <div style="display: flex; position: relative; margin-left: 58%; top: 10rem;" class="email-box">
+        <form action="processamento_newsletter.php" method="post">
             <i class="fa-solid fa-envelope fa-xl" style=" background-color: rgb(32, 32, 32); line-height: 1.5rem; padding: 1rem; color: #ffffff;"></i>
             <input id="id-in-email" class="in-email" style="font-size: 1.2rem;" type="email" name="Email" placeholder="E-mail para Newsletter"> 
-            <button class="b-email" style="color: white; background-color:rgb(32, 32, 32); font-size: 1rem; font-family: 'Gotham-Book', sans-serif; text-transform: uppercase;" type="button" name="button" value="submit" onclick="emailbox()">Inscrever-se</button>
+            <button class="b-email" style="color: white; background-color:rgb(32, 32, 32); font-size: 1rem; font-family: 'Gotham-Book', sans-serif; text-transform: uppercase;" type="submit">➤</button>
         </form>
     </div>
 </section>

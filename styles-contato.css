@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-color: #252525;
 }
 @font-face {
     font-family: 'Gotham-Bold';
@@ -20,6 +21,59 @@ body, html {
     font-family: 'Gothvetica';
     src: url(fonts/Gothvetica\ Caps\ -\ www.themarkstudio.co.za.ttf) format('truetype');
 }
+/* RESPONSIVIDADE CONTATO */
+@media screen and (max-device-width: 650px) and (min-device-width: 500px) {
+    #logo {
+        display: none;
+    }
+    #text {
+        width: auto !important;
+    }
+}
+@media screen and (max-device-width: 750px) and (min-device-width: 650px) {
+    #text {
+        width: auto !important;
+    }
+}
+@media screen and (max-device-width: 500px) and (min-device-width: 400px) {
+    #logo {
+        display: none;
+    }
+    #linkstop-contato {
+        gap: 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+    #toggle img {
+        height: 1.2rem !important;
+    }
+    #toggle {
+        padding: 0 0rem !important;
+        height: 1.5rem !important;
+    }
+    #text {
+        width: auto !important;
+    }
+}
+@media screen and (max-device-width: 400px) and (min-device-width: 300px) {
+    #logo {
+        display: none;
+    }
+    #linkstop-contato {
+        gap: 0.7rem !important;
+        font-size: 0.9rem !important;
+    }
+    #toggle img {
+        height: 1.2rem !important;
+    }
+    #toggle {
+        padding: 0 0rem !important;
+        height: 1.5rem !important;
+   }
+   #text {
+    width: auto !important;
+}
+}
+/* NAV-BAR CONTATO */
 #logo {
     height: 5rem;
     margin-left: 5%;
@@ -48,18 +102,18 @@ body, html {
     color: burlywood !important;
     transition: 0.5s;
 }
-
+/* MENSAGEM */
 #text {
     width: 42rem;
     font-family: 'Gotham-Book', sans-serif;
     color: #181515;
     margin: 6rem auto;
     padding: 2rem 2rem 3rem 2rem;
-    background-color: #d4d4d4;
+    background-color: #9b9b9b;
     text-align: center;
 }
 mark {
-    background-color: #9c9c9c;
+    background-color: #646464;
 }
 #text a {
     background-color: rgb(0, 61, 173);

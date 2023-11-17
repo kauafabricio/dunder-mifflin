@@ -3,6 +3,14 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    --bg-white: #ffffff;
+    --bg-dark: #252525;
+    background-color: var(--bg-white);
+    transition: 1s;
+}
+.dark {
+    --bg-white: #252525;
+    --bg-dark: #ffffff;
 }
 @font-face {
     font-family: 'Gotham-Bold';
@@ -19,6 +27,65 @@ body, html {
 @font-face {
     font-family: 'Gothvetica';
     src: url(fonts/Gothvetica\ Caps\ -\ www.themarkstudio.co.za.ttf) format('truetype');
+}
+/*RESPONSIVIDADE DA LOJA */
+@media screen and (max-device-width: 650px) and (min-device-width: 500px) {
+    #logo {
+        display: none;
+    }
+    .item {
+        height: 16rem !important;
+    }
+}
+@media screen and (max-device-width: 500px) and (min-device-width: 400px) {
+    #logo {
+        display: none;
+    }
+    #linkstop-loja {
+        gap: 1.5rem !important;
+        font-size: 0.9rem !important;
+    }
+    #toggle img {
+        height: 1.2rem !important;
+    }
+    #toggle {
+        padding: 0 0rem !important;
+        height: 1.5rem !important;
+    }
+    .item {
+        height: 13rem !important;
+    }
+    .container-produtos {
+        margin: 5rem auto !important;
+    }
+    .produto img {
+        height: 16.5rem !important;
+    }
+}
+@media screen and (max-device-width: 400px) and (min-device-width: 300px) {
+    #logo {
+        display: none;
+    }
+    #linkstop-loja {
+        gap: 0.7rem !important;
+        font-size: 0.9rem !important;
+    }
+    #toggle img {
+        height: 1.2rem !important;
+    }
+    #toggle {
+        padding: 0 0rem !important;
+        height: 1.5rem !important;
+    }
+    .item {
+        height: 13rem !important;
+    }
+    .container-produtos {
+        margin: 5rem auto !important;
+    }
+    .produto img {
+        height: 16.5rem !important;
+    }
 }
 /* NAV-BAR CSS */
 #logo {
@@ -115,7 +182,7 @@ body, html {
     font-size: 1.5rem;
     color: #181515;
 }
-
+/* PRODUTOS */
 .container-produtos {
     display: flex;
     flex-wrap: wrap;
@@ -152,6 +219,7 @@ body, html {
     color: white;
     transition: 0.3s ease-in-out;
 }
+/* SORTEIO */
 .sorteio-conteiner {
     background-color: #181515;
     max-width: auto;
