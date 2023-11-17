@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <script src="./script-loja.js"></script>
+    <script src="./script-loja.js" defer></script>
     <!-- NAV-BAR -->
     <div id="nav-bar-loja">
         <img id="logo" title="Logo da Dunder Mifflin Paper Company Inc." src="images/logo.png">
@@ -71,18 +71,18 @@
     <h1 class="sorteio-texto">Participe do nosso sorteio</h1>
     <p class="sorteio-texto2">Concorra ao nosso sorteio de <mark>5 cadernos da Dunder Mifflin.</mark></p>
     <img src="images/img-sorteio.jpeg" alt=""><br>
+    <p style="color: white;" id="retorno"></p>
     <button class="sorteio-button">CONCORRER</button>
     <dialog id="modal">
     <button id="closeButton">X</button>
     <h3>Digite suas informações</h3>
     <p>Iremos contatar você caso seja sorteado(a).</p>
-    <form action="">
+    <form action="processamento_sorteio.php" method="post">
         <label for="name"><b>Nome:</b></label>
         <input type="text" placeholder="Digite seu nome" name="name" size="30"><br>
         <label for="email"><b>E-mail:</b></label>
         <input placeholder="Digite seu e-mail" type="email" name="email" size="30"><br><br>
         <button type="submit">ENVIAR</button>
-        
     </form>
 </dialog>
 </div>
